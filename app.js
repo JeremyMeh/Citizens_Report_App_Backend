@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoClient = require('mongodb').MongoClient;
 
-const url = "mongodb+srv://lexi:@cluster0.1dnvl.mongodb.net/?retryWrites=true&w=majority"
+const url = "process.env.MONGODB_URL"
 
 app.use(express.json());
 
